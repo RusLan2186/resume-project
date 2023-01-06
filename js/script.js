@@ -15,6 +15,7 @@ const headerLinks = document.querySelectorAll('.header__menu')
 headerLinks.forEach((el) => {
    el.addEventListener('click', () => {
       $('.header__burger,.header__menu').toggleClass('active');
+      $('body').toggleClass('lock');
    })
 })
 
@@ -24,12 +25,19 @@ new Swiper('.portfolio__slider', {
    slidesPerView: 3,
    spaceBetween: 56,
    autowidth: true,
+
    navigation: {
       nextEl: '.portfolio__arrow-right',
       prevEl: '.portfolio__arrow-left'
    },
    nested: true,
    speed: 800,
+   // autoplay: {
+   //    delay: 500,
+   //    Infinity: true,
+   // },
+
+
    breakpoints: {
       320: {
          slidesPerView: 1.2,

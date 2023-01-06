@@ -285,7 +285,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .header__container {
-    min-height: 80px;
+    min-height: 60px;
   }
 }
 .header__logo {
@@ -316,6 +316,7 @@ body {
   .header__btn {
     background-color: #232e35;
     color: #f1f1f1;
+    padding: 12px 20px;
   }
 }
 
@@ -339,6 +340,13 @@ body {
     min-height: 80px;
     background-color: #c8c5f1;
   }
+}
+@media (max-width: 767.98px) and (max-width: 767.98px) {
+  .menu::before {
+    min-height: 60px;
+  }
+}
+@media (max-width: 767.98px) {
   .menu.active {
     left: 0;
     transition: 0.5s all ease 0s;

@@ -10,15 +10,6 @@
    max-width: 1270px;
    margin: 0 auto;
    padding: 0 15px;
-   // @media (max-width: 1199.98px) {
-   //    max-width: 970px;
-   // }
-   // @media (max-width: 991.98px) {
-   //    max-width: 750px;
-   // }
-   // @media (max-width: 767.98px) {
-   //    max-width: none;
-   // }
 }
 // .......................МИКСИНЫ.ШАБЛОНЫ ...............................................
 @mixin image-ibg {
@@ -218,7 +209,7 @@ body.lock {
       justify-content: space-between;
       align-items: center;
       @media (max-width: 767.98px) {
-         min-height: 80px;
+         min-height: 60px;
       }
    }
 
@@ -228,14 +219,8 @@ body.lock {
       z-index: 3;
    }
 
-   // .header__burger
-
-   // .header__menu
-
    &__menu {
    }
-
-   // .header__button
 
    &__actions {
       @media (max-width: 767.98px) {
@@ -263,6 +248,7 @@ body.lock {
       @media (max-width: 767.98px) {
          background-color: $black;
          color: #f1f1f1;
+         padding: 12px 20px;
       }
    }
 }
@@ -284,6 +270,9 @@ body.lock {
          width: 100%;
          min-height: 80px;
          background-color: #c8c5f1;
+         @media (max-width: 767.98px) {
+            min-height: 60px;
+         }
       }
       &.active {
          left: 0;
